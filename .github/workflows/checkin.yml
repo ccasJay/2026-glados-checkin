@@ -46,6 +46,7 @@ jobs:
 
       - name: Run Checkin
         run: python checkin.py
+        continue-on-error: true
         timeout-minutes: 8
         env:
           GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
